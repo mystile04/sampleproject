@@ -1,0 +1,1432 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #000;
+}
+
+/*this is for header*/
+header {
+    z-index: 1;
+    background-color: #ffff;
+    padding-left: 2%;
+    padding-right: 2%;
+    height: 75px;
+    width: 100%;
+    position: fixed;
+}
+
+.logo {
+    float: left;
+    margin-top: 26px;
+    color: black;
+}
+
+.logo img {
+    width: 50px;
+    height: 10px;
+}
+
+/* mobile navigation*/
+label #open,
+label #close {
+    color: #c0c0c0;
+    font-size: 40px;
+    float: right;
+    margin-right: 5%;
+    line-height: 75px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+    float: right;
+    margin-top: 30px;
+}
+
+/*Navigation bar*/
+.nav-bar ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 25px;
+}
+
+.nav-bar ul li {
+    display: inline;
+}
+
+.nav-bar ul li a {
+    position: relative;
+    color: #000;
+    font-size: 13px;
+    text-decoration: none;
+    list-style: none;
+}
+
+.nav-bar ul li a::after {
+    content: '';
+    position: absolute;
+    background-color: #40404040;
+    height: 1px;
+    width: 0;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+}
+
+.nav-bar ul li a:hover::after {
+    width: 100%;
+}
+
+.nav-bar ul li a:hover {
+    color: #40404040;
+}
+
+#search {
+    background-color: #c0c0c0;
+    position: fixed;
+    width: 100%;
+    height: 110px;
+
+}
+
+.searchbook-bar {
+    margin-top: 75px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.search-bar input {
+    padding: 10px 15px;
+    outline: none;
+    border: none;
+    background-color: transparent;
+    font-size: 15px;
+}
+
+.appointment-book h3 {
+    padding-top: 10px;
+    font-size: 15px;
+}
+
+.appointment-book a {
+    text-decoration: none;
+    color: #000;
+}
+
+/*this is services section*/
+#services {
+    height: 650px;
+    background-image: url("../pictures/dining.jpg");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-text h1 {
+    text-transform: capitalize;
+    font-size: 80px;
+    font-family: serif;
+    color: #000;
+}
+
+/*this is marketing section*/
+#marketing {
+    height: 2380px;
+    background-color: #ffff;
+    padding-left: 8%;
+    padding-right: 8%;
+}
+
+/*marketing logo*/
+.marketing-logo {
+    text-align: center;
+    padding-top: 8%;
+}
+
+.marketing-logo h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+    font-family: serif;
+    letter-spacing: 2px;
+    color: #000;
+}
+
+.icons1 {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mail-cont,
+.syndicate-cont,
+.virtual-cont,
+.photograpy-cont {
+    text-align: center;
+}
+
+.icon-text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.marketing-img {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.marketing-img img {
+    width: 750px;
+    height: auto;
+}
+
+.mail-text,
+.syndicate-text,
+.virtual-text,
+.photograpy-text {
+    margin-top: 20px;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.mail-cont img,
+.syndicate-cont img,
+.virtual-cont img,
+.photograpy-cont img {
+    height: 100px;
+}
+
+.decor-text {
+    background-color: black;
+    width: 100%;
+    height: 75px;
+    margin-top: 40px;
+    text-align: center;
+}
+
+.decor-text p {
+    color: white;
+    line-height: 75px;
+    font-size: 30px;
+}
+
+.decor1-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.decor-pic1 img,
+.decor-pic2 img {
+    width: 100%;
+    height: 270px;
+}
+
+.decor1-text {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.decor1-text h1 {
+    font-size: 35px;
+    font-weight: 100;
+
+}
+
+.decor1-text ul {
+    font-size: 20px;
+}
+
+.decor1-text ul li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* process section */
+#selling-container {
+    background-image: url(../pictures/selling-bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#buying-container {
+    background-image: url(../pictures/buying-bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.selling-logo {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.selling-logo h2 {
+    font-size: 40px;
+    text-transform: capitalize;
+    color: #ffff;
+    font-weight: 100;
+}
+
+.stats-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding-right: 8%;
+    padding-left: 8%;
+    background-color: rgba(23, 23, 23, 0.75);
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 5%;
+}
+
+.stats2-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    padding-right: 8%;
+    padding-left: 8%;
+    background-color: rgba(23, 23, 23, 0.75);
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-top: 5%;
+}
+
+.selling1,
+.selling2,
+.selling3,
+.selling4,
+.selling5 {
+    padding-right: 12%;
+    padding-left: 12%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    border: 1px #c0c0c0 solid;
+}
+
+.selling1:hover,
+.selling2:hover,
+.selling3:hover,
+.selling4:hover,
+.selling5:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+}
+
+.selling-num {
+    text-align: center;
+    font-size: 30px;
+    color: #ffff;
+    font-family: sans-serif
+}
+
+.seling-text {
+    margin-top: 20px;
+    text-align: center;
+    color: #ffff;
+}
+
+/*this is marketing2 section*/
+#marketing2 {
+    height: 4200px;
+    padding-left: 8%;
+    padding-right: 8%;
+    background-color: #ffff;
+    padding-top: 8%;
+}
+
+.marketing2-text,
+.marketing2-text2 {
+    display: flex;
+    align-items: center;
+    float: left;
+    width: 500px;
+    height: 470px;
+    border-bottom: 1px solid #c0c0c0;
+}
+
+.marketing2-text h1 {
+    font-weight: lighter;
+    font-size: 30px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.marketing2-img {
+    float: right;
+}
+
+.marketing2-img img {
+    height: 470px;
+    width: 505px;
+}
+
+.marketing2-text2 h1 {
+    font-weight: lighter;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.marketing2-img2 {
+    float: right;
+}
+
+.marketing2-img2 img {
+    height: 470px;
+    width: 505px;
+}
+
+.marketing3-text3 {
+    float: left;
+    width: 500px;
+    height: 510px;
+}
+
+.marketing3-text3 h1 {
+    font-weight: lighter;
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.marketing3-img3 {
+    float: right;
+}
+
+.marketing3-img3 img {
+    height: 283px;
+    width: 505px;
+}
+
+.marketing-benefits {
+    margin-top: 20px;
+}
+
+.marketing-benefits h2 {
+    margin-bottom: 10px;
+}
+
+.marketing-benefits ul {
+    margin-left: 20px;
+}
+
+.marketing-benefits ul li {
+    margin-top: 10px;
+}
+
+.marketing-benefits p {
+    margin-top: 25px;
+}
+
+/* clear the float */
+.clear {
+    clear: both;
+}
+
+.heads {
+    margin-top: 5%;
+    text-align: center;
+}
+
+.heads h1 {
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.heads h2 {
+    margin-top: 30px;
+}
+
+.heads p {
+    margin-top: 5px;
+}
+
+.border-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.border1,
+.border2,
+.border3 {
+    width: 30%;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.border1 h3,
+.border2 h3,
+.border3 h3 {
+    margin-bottom: 10px;
+}
+
+.threelogo {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.threelogo img {
+    width: 208px;
+    height: 16px;
+}
+
+.logotxt-container {
+    float: left;
+    width: 500px;
+    height: 568px;
+}
+
+.threelogo2-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25%;
+}
+
+.tlogo1,
+.tlogo2,
+.tlogo3 {
+    padding: 10px;
+}
+
+.tlogo1 img {
+    width: 103px;
+    height: 80px;
+}
+
+.tlogo2 img {
+    width: 172px;
+    height: 85px;
+}
+
+.tlogo3 img {
+    width: 155px;
+    height: 55px;
+}
+
+.logo1-text p {
+    margin-top: 20px;
+}
+
+.headp {
+    text-align: center;
+}
+
+.luxury-pic {
+    margin-top: 20px;
+    float: right;
+}
+
+.luxury-pic img {
+    width: 505px;
+    height: 568px;
+}
+
+.tlogo1,
+.tlogo2,
+.tlogo3 {
+    padding: 10px;
+}
+
+.tlogo1 img {
+    width: 103px;
+    height: 80px;
+}
+
+.tlogo2 img {
+    width: 172px;
+    height: 85px;
+}
+
+.tlogo3 img {
+    width: 155px;
+    height: 55px;
+}
+
+.logo1-text p {
+    margin-top: 20px;
+}
+
+.luxury-pic {
+    margin-top: 20px;
+    float: right;
+}
+
+.luxury-pic img {
+    width: 505px;
+    height: 568px;
+}
+
+.threelogo {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.threelogo img {
+    width: 208px;
+    height: 16px;
+}
+
+.threelogo2-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25%;
+}
+
+.tlogo1,
+.tlogo2,
+.tlogo3 {
+    padding: 10px;
+}
+
+.tlogo1 img {
+    width: 103px;
+    height: 80px;
+}
+
+.tlogo2 img {
+    width: 172px;
+    height: 85px;
+}
+
+.tlogo3 img {
+    width: 155px;
+    height: 55px;
+}
+
+.logo1-text p {
+    margin-top: 20px;
+}
+
+.headp {
+    text-align: center;
+}
+
+.luxury-pic {
+    margin-top: 20px;
+    float: right;
+}
+
+.luxury-pic img {
+    width: 505px;
+    height: 568px;
+}
+
+.logotxt-container2 {
+    float: left;
+    width: 500px;
+    height: 568px;
+    margin-top: 45px;
+}
+
+.threelogo2-container2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.ttlogo1,
+.ttlogo2,
+.ttlogo3 {
+    padding: 10px;
+}
+
+.ttlogo1 img {
+    width: 103px;
+    height: 80px;
+}
+
+.ttlogo2 img {
+    width: 172px;
+    height: 85px;
+}
+
+.ttlogo3 img {
+    width: 155px;
+    height: 55px;
+}
+
+.logo1-text2 {
+    margin-top: 30%;
+}
+
+.logo1-text2 p {
+    margin-top: 20px;
+}
+
+.logo2-text2 {
+    margin-top: 20px;
+}
+
+.luxury-pic2 {
+    margin-top: 20px;
+    float: right;
+}
+
+.luxury-pic2 img {
+    width: 505px;
+    height: 568px;
+}
+
+.icon-secondcontainer {
+    background-color: whitesmoke;
+    margin-top: 10px;
+}
+
+.icons11 {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mail-cont1,
+.syndicate-cont1,
+.virtual-cont1,
+.photograpy-cont1 {
+    text-align: center;
+}
+
+.icon-text1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.mail-text1,
+.syndicate-text1,
+.virtual-text1,
+.photograpy-text1 {
+    margin-top: 20px;
+    text-align: center;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.mail-cont1 img,
+.syndicate-cont1 img,
+.virtual-cont1 img,
+.photograpy-cont1 img {
+    height: 100px;
+}
+
+.cell {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.cell img {
+    width: 367px;
+    height: 544px;
+}
+
+.cell-text {
+    width: 400px;
+}
+
+.cell-text p {
+    margin-top: 50%;
+    font-size: 20px;
+}
+
+/* this is work with us section */
+#work {
+    background-image: url(../pictures/work-bg.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.work-logo {
+    text-align: center;
+    padding-top: 10%;
+}
+
+.work-logo h1 {
+    font-size: 40px;
+    font-weight: 100;
+}
+
+.work-text {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.work-text p {
+    font-size: 20px;
+}
+
+.btn {
+    text-align: center;
+    margin-top: 10%;
+}
+
+.btn button {
+    padding: 15px 20px;
+    border: #000 solid 2px;
+    background-color: rgba(23, 23, 23, 0.75);
+    border-radius: 50px;
+}
+
+.btn button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/*this is footer section*/
+footer {
+    height: 600px;
+    background-color: black;
+    padding-left: 15%;
+    padding-right: 15%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 7%;
+}
+
+.footertext-container {
+    width: 360px;
+    color: #ffff;
+}
+
+.footertext-container h2 {
+    margin-bottom: 20px;
+}
+
+.footer-newsletter {
+    width: 360px;
+    color: #ffff;
+}
+
+.footer-newsletter h2 {
+    margin-bottom: 20px;
+}
+
+.footer-newsletter input {
+    margin-top: 30px;
+    width: 100%;
+    background-color: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    outline: none;
+    font-size: 20px;
+    color: #fff;
+}
+
+.btn1 {
+    margin-top: 5%;
+}
+
+.btn1 button {
+    padding: 15px 20px;
+    border: #fff solid 2px;
+    background-color: #000;
+    border-radius: 50px;
+    color: #fff;
+}
+
+.btn1 button:hover {
+    background-color: rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.footer-holder {
+    margin-top: 20px;
+    height: 60px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+
+#footer-add h1,
+#footer-phone h1,
+#footer-socmed h1 {
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    margin-bottom: 15px;
+}
+
+#footer-add p,
+#footer-phone p {
+    color: white;
+    font-size: 15px;
+}
+
+#footer-email {
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.footer-icon1 img {
+    width: 42px;
+    height: 50px;
+}
+
+.footer-icon2 img {
+    width: 50px;
+    height: 48px;
+}
+
+.footer-icon3 {
+    padding-top: 15px;
+}
+
+.footer-icon3 img {
+    width: 50px;
+    height: 10px;
+
+}
+
+.socmed-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.fb-logo2 {
+    height: 25px;
+    width: 25px;
+    background-color: darkblue;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+.fb-logo2 i,
+.in-logo2 i,
+.gh-logo2 i {
+    color: white;
+    font-size: 13px;
+    line-height: 25px;
+}
+
+.in-logo2 {
+    height: 25px;
+    width: 25px;
+    background-color: blue;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+.gh-logo2 {
+    height: 25px;
+    width: 25px;
+    background: #FF1493;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+    margin-top: 3px;
+}
+
+.fb-logo2:hover,
+.in-logo2:hover,
+.gh-logo2:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+}
+
+#footer-text {
+    text-align: center;
+    margin-top: 45px;
+    border-top: 1px solid gray;
+}
+
+#footer-text p {
+    color: white;
+    padding-top: 10px;
+}
+
+.arrow {
+
+    position: fixed;
+    bottom: 30px;
+    right: 1%;
+    background-color: red;
+    border-radius: 50px;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+.arrow a {
+    color: white;
+    font-size: 25px;
+}
+
+/* starts of media query */
+
+@media (min-width: 1840px) {
+    #selling-container {
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+
+    #buying-container {
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+
+    #marketing2 {
+        padding-right: 20%;
+        padding-left: 20%;
+    }
+}
+
+@media (min-width: 1700px) {
+    #selling-container {
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+
+    #buying-container {
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+
+    #marketing2 {
+        padding-right: 15%;
+        padding-left: 15%;
+    }
+}
+
+@media (max-width: 1500px) {
+    #selling-container {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    #buying-container {
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+}
+
+@media (max-width: 1260px) {
+
+    #marketing2 {
+        height: 5500px;
+        padding-right: 10%;
+        padding-left: 10%;
+    }
+
+    .marketing2-text,
+    .marketing2-text2 {
+        text-align: center;
+        float: none;
+        width: 100%;
+        height: 200px;
+        border-bottom: none;
+    }
+
+    .marketing2-img {
+        float: none;
+        text-align: center;
+    }
+
+    .marketing2-img img {
+        height: 480px;
+        width: 560px;
+    }
+
+    .marketing2-img2 {
+        float: none;
+        text-align: center;
+    }
+
+    .marketing2-img2 img {
+        height: 480px;
+        width: 560px;
+    }
+
+    .marketing3-text3 {
+        float: none;
+        width: 100%;
+        height: 370px;
+    }
+
+    .marketing3-img3 {
+        float: none;
+        text-align: center;
+    }
+
+    .marketing3-img3 img {
+        height: 300px;
+        width: 560px;
+    }
+
+    #selling-container {
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+
+    #buying-container {
+        padding-right: 0%;
+        padding-left: 0%;
+    }
+
+    .logotxt-container {
+        float: none;
+        width: 100%;
+        height: 300px;
+        text-align: center;
+    }
+
+    .threelogo2-container {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 3%;
+    }
+
+    .luxury-pic {
+        margin-top: 20px;
+        float: none;
+        text-align: center;
+    }
+
+    .luxury-pic img {
+        width: 505px;
+        height: 568px;
+    }
+
+    .luxury-pic {
+        margin-top: 20px;
+        float: none;
+    }
+
+    .luxury-pic img {
+        width: 505px;
+        height: 568px;
+    }
+
+    .threelogo {
+        text-align: center;
+        margin-top: 30px;
+    }
+
+    .luxury-pic {
+        margin-top: 20px;
+        float: none;
+    }
+
+    .luxury-pic img {
+        width: 550px;
+        height: 570px;
+    }
+
+    .logotxt-container2 {
+        float: none;
+        width: 100%;
+        height: 230px;
+        margin-top: 45px;
+        text-align: center;
+    }
+
+    .threelogo2-container2 {
+        justify-content: space-around;
+    }
+
+    .logo1-text2 {
+        margin-top: 5%;
+    }
+
+    .luxury-pic2 {
+        margin-top: 20px;
+        float: none;
+        text-align: center;
+    }
+
+    .luxury-pic2 img {
+        width: 560px;
+        height: 570px;
+    }
+
+    /* footer */
+    footer {
+        height: 600px;
+    }
+
+    .arrow {
+        right: 10%;
+    }
+}
+
+@media (max-width: 1000px) {
+    #marketing2 {
+        height: 5700px;
+    }
+
+    .logo {
+        float: left;
+        margin-top: 27px;
+        color: black;
+    }
+
+    .logo img {
+        width: 120px;
+        height: 20px;
+    }
+
+    /* mobile navigation */
+    label #open {
+        display: block;
+    }
+
+    .nav-bar ul {
+        position: fixed;
+        width: 50%;
+        height: 100%;
+        top: 110px;
+        right: -100%;
+        text-align: center;
+        background-color: #fff;
+        transition: all .5s;
+    }
+
+    .nav-bar ul {
+        display: initial;
+        padding-top: 25px;
+    }
+
+    .nav-bar ul li {
+        display: block;
+        padding-top: 50px;
+    }
+
+    .nav-bar ul li a {
+        font-size: 25px;
+        border-bottom: 1px solid #c0c0c0;
+    }
+
+    .nav-bar ul li a:hover::after {
+        width: 0%;
+    }
+
+    #check:checked~ul {
+        right: 0;
+    }
+
+    #check:checked~label #open {
+        display: none;
+    }
+
+    #check:checked~label #close {
+        display: block;
+    }
+
+    /* cellphone logo*/
+    .cell {
+        margin-top: 20px;
+        display: block;
+        text-align: center;
+    }
+
+    .cell img {
+        width: 400px;
+    }
+
+    .cell-text {
+        width: 100%;
+    }
+
+    .cell-text p {
+        margin-top: 5%;
+    }
+
+    .footer-container {
+        display: block;
+    }
+
+    .footertext-container {
+        width: 100%;
+    }
+
+    .footer-newsletter {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 850px) {
+    #marketing2 {
+        height: 6000px;
+    }
+
+    .marketing-img img {
+        width: 550px;
+    }
+
+    .decor1-text {
+        display: block;
+        align-items: center;
+    }
+
+    .decor1-text h1 {
+        font-size: 35px;
+        font-weight: 100;
+
+    }
+
+    .decor1-text ul {
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
+    .decor1-text ul li {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    .border-container {
+        display: block;
+    }
+    .border1,
+    .border2,
+    .border3 {
+        width: 100%;
+    }
+    .marketing3-img3 {
+        float: none;
+        text-align: center;
+        margin-top: 150px;
+    }
+
+    .marketing3-img3 img {
+        height: 283px;
+        width: 505px;
+    }
+
+    #footer {
+        height: 660px;
+    }
+
+}
+
+@media (max-width: 650px) {
+    .appointment-book h3 {
+        padding-top: 13px;
+        font-size: 10px;
+    }
+
+    #marketing2 {
+        height: 6200px;
+    }
+
+    .stats-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .stats2-container {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+    }
+
+    .marketing2-img2 {
+        float: none;
+        margin-top: 20px;
+    }
+
+    .border-container {
+        display: block;
+    }
+
+    .luxury-pic {
+        margin-top: 70px;
+        float: none;
+    }
+
+    .luxury-pic2 {
+        margin-top: 75px;
+        float: none;
+    }
+
+    .luxury-pic img {
+        width: 400px;
+        height: 500px;
+    }
+
+    .luxury-pic2 img {
+        width: 400px;
+        height: 500px;
+    }
+    .footer-holder {
+        margin-top: 20px;
+        height: 180px;
+        width: 100%;
+        display: block;
+        padding-top: 10px;
+    }
+
+    footer {
+        height: 680px;
+    }
+
+    #footer-add h1,
+    #footer-phone h1,
+    #footer-socmed h1 {
+        color: white;
+        font-size: 15px;
+        font-family: sans-serif;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    #footer-phone h1 {
+        margin-top: 5px;
+    }
+
+    #footer-add p,
+    #footer-phone p {
+        color: white;
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .socmed-container {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .marketing-img img {
+        height: 430px;
+        width: 500px;
+    }
+
+    .marketing2-img img {
+        height: 430px;
+        width: 500px;
+    }
+
+    .marketing2-img2 img {
+        height: 430px;
+        width: 500px;
+    }
+
+}
+
+/* End of styling css */
