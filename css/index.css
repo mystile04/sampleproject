@@ -1200,7 +1200,7 @@ footer {
         position: fixed;
         width: 50%;
         height: 100%;
-        top: 110px;
+        top: 75px;
         right: -100%;
         text-align: center;
         background-color: #fff;
@@ -1209,12 +1209,12 @@ footer {
 
     .nav-bar ul {
         display: initial;
-        padding-top: 25px;
+        padding-top: 0px;
     }
 
     .nav-bar ul li {
         display: block;
-        padding-top: 50px;
+        padding-top: 30px;
     }
 
     .nav-bar ul li a {
